@@ -1,0 +1,132 @@
+/* Flexbox on all the elements and classes */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+h1 {
+  font-size: 2.5em;
+  flex-wrap: wrap;
+  font-weight: 300;
+  margin: 0;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+header nav ul {
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 10px;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+header nav ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+}
+}
+main p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+  height: 30vh;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+section h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+}
+section p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+aside {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 20%;
+    align-content: space-between;
+    border-left: 1px solid black;
+}
+aside h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+}
+aside p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+}
+footer p {
+  color: #f1f1f1;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+div .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 100vw;
+}
+
+/* Path: assets\css\style.css */
+/* Media queries */
