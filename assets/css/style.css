@@ -1,3 +1,9 @@
+:root {
+  --color1: #000000;
+  --color2: #ffffff;
+  --color3: deeppink;
+  --color4: #f1f1f1;
+}
 /* Flexbox on all the elements and classes */
 body {
   display: flex;
@@ -10,8 +16,8 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: var(--color1);
+  color: var(--color2);
   padding: 20px;
 }
 h1 {
@@ -28,33 +34,34 @@ header nav {
   padding: 20px;
 }
 header nav ul {
-  color: #f1f1f1;
+  color: var(--color4);
   text-decoration: none;
   padding: 10px;
+  list-style: none;
 }
 header nav ul li {
   display: inline-block;
   padding: 10px;
+  list-style: none;
 }
 header nav ul li a {
-  color: #f1f1f1;
+  color: var(--color4);
   text-decoration: none;
 }
 header nav ul li a:hover {
-  color: #f1f1f1;
+  color: var(--color4);
   text-decoration: underline;
 }
 main {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    background-color: #f1f1f1;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: stretch;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: var(--color4);
+  padding: 20px;
+  justify-content: space-between;
+  align-items: stretch;
 }
-}
-}
+
 main p {
   font-size: 1.5em;
   font-weight: 300;
@@ -63,18 +70,25 @@ main p {
 section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 30vw;
   height: 30vh;
-  background-color: #f1f1f1;
+  background-color: var(--color4);
   padding: 20px;
   border: 1px solid black;
   border-radius: 5px;
+  margin: 25px;
+  align-content: stretch;
+  flex-wrap: wrap;
 }
 section h2 {
+  text-align: center;
   font-size: 2em;
   font-weight: 300;
-  margin: 0;
+  margin-top: -40px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: var(--color3);
 }
 section p {
   font-size: 1.5em;
@@ -83,14 +97,14 @@ section p {
 }
 aside {
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #f1f1f1;
-    padding: 20px;
-    width: 20%;
-    align-content: space-between;
-    border-left: 1px solid black;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color4);
+  padding: 20px;
+  width: 20%;
+  align-content: space-between;
+  border-left: 1px solid black;
 }
 aside h2 {
   font-size: 2em;
@@ -106,26 +120,42 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #333;
   padding: 20px;
+  align-content: center;
 }
 footer p {
-  color: #f1f1f1;
+  color: var(--color4);
   font-size: 1.5em;
   font-weight: 300;
   margin: 0;
 }
-div .container {
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-decoration: none;
+}
+footer nav ul li {
+  display: inline-block;
+  padding: 10px;
+  list-style: none;
+}
+footer nav ul li a {
+  color: var(--color4);
+  text-decoration: none;
+}
+/* div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} */
+.container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: #f1f1f1;
-  padding: 20px;
-  width: 100vw;
 }
 
 /* Path: assets\css\style.css */
