@@ -1,4 +1,4 @@
-# templates-generalWebsite
+# General Flexbox Template website.
 
 ---
 
